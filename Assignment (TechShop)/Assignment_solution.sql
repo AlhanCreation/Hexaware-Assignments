@@ -126,44 +126,61 @@ values
 (5009, 2009, 60, '2025-02-28'),
 (5010, 2010, 110, '2025-02-28');
 
+select * from Orders
+select * from OrderDetails
 
 --Tasks 2: Select, Where, Between, AND, LIKE:
 
---1. Write an SQL query to retrieve the names and emails of all customers.
+/* 1. Write an SQL query to retrieve the names and emails of all customers.  */
 
-select FirstName,email from Customers
+	select FirstName,email from Customers
 
---2. Write an SQL query to list all orders with their order dates and corresponding customer names.
+/* 2. Write an SQL query to list all orders with their order dates and corresponding customer names.  */
 
-SELECT 
-    Orders.OrderID, 
-    Orders.OrderDate, 
-    Customers.FirstName, 
-    Customers.LastName
-FROM Orders
-JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
+	SELECT Orders.OrderID, Orders.OrderDate, Customers.FirstName, Customers.LastName
+	FROM Orders, Customers
+	WHERE Orders.CustomerID = Customers.CustomerID;
 
---3. Write an SQL query to insert a new customer record into the "Customers" table. Include customer information such as name, email, and address.
+/* 3. Write an SQL query to insert a new customer record into the "Customers" table. Include customer information such as name, email, and address.
+   its importent to add customerID as it is p.k  */
 
-insert into Customers(CustomerID,FirstName,email,CustomerAddress) 
-values
-(1011 ,'Alhan','alhanapsiddique@gmail.com','Nagpur');                   -- its importent to add customerID as it is p.k
+	insert into Customers(CustomerID,FirstName,email,CustomerAddress) 
+	values(1011 ,'Alhan','alhanapsiddique@gmail.com','Nagpur');    
 
---4 Write an SQL query to update the prices of all electronic gadgets in the "Products" table by increasing them by 10%.
+/* 4 Write an SQL query to update the prices of all electronic gadgets in the "Products" table by increasing them by 10%. */
 
-select * from Products;
-update Products set Price = Price*1.10;
+	select * from Products;
+	update Products set Price = Price*1.10;
 
---5. Write an SQL query to delete a specific order and its associated order details from the "Orders" and "OrderDetails" tables.
---   Allow users to input the order ID as a parameter.
+/* 5. Write an SQL query to delete a specific order and its associated order details from the "Orders" and "OrderDetails" tables. 
+   Allow users to input the order ID as a parameter.  */
 
+	Declare @inputOrderId numeric (10,0)
+	SET @inputOrderId = 30011; 
+	DELETE FROM OrderDetails WHERE OrderID = @inputOrderId;
+	delete from Orders where OrderID = @inputOrderId 
 
---6. Write an SQL query to insert a new order into the "Orders" table. Include the customer ID, order date, and any other necessary information.
+/* 6. Write an SQL query to insert a new order into the "Orders" table. Include the customer ID, order date, and any other necessary information.  */
 
-insert into Orders (OrderID, CustomerID, OrderDate)
-values
-(30011, 1001, '2025-03-21');
+	insert into Orders (OrderID, CustomerID, OrderDate)
+	values
+	(30011, 1001, '2025-03-21');
 
---7 Write an SQL query to update the contact information (e.g., email and address) of a specific
---   customer in the "Customers" table. Allow users to input the customer ID and new contact
---    information.
+/* 7 Write an SQL query to update the contact information (e.g., email and address) of a specific
+   customer in the "Customers" table. Allow users to input the customer ID and new contact information. */
+
+/* 8. Write an SQL query to recalculate and update the total cost of each order in the "Orders" 
+table based on the prices and quantities in the "OrderDetails" table. */
+
+/* 9. Write an SQL query to delete all orders and their associated order details for a specific 
+customer from the "Orders" and "OrderDetails" tables. Allow users to input the customer ID 
+as a parameter. */
+
+/* 10. Write an SQL query to insert a new electronic gadget product into the "Products" table, 
+including product name, category, price, and any other relevant details.  */
+
+/* 11. Write an SQL query to update the status of a specific order in the "Orders" table (e.g., from 
+"Pending" to "Shipped"). Allow users to input the order ID and the new status. */ 
+
+/* 12. Write an SQL query to calculate and update the number of orders placed by each customer 
+in the "Customers" table based on the data in the "Orders" table. */
