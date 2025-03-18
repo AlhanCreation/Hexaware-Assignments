@@ -1,0 +1,18 @@
+SET II  (Using the same tables as Assignment 2)
+
+1. Retrieve a list of MANAGERS. 
+2. Find out the names and salaries of all employees earning more than 1000 per 
+month. 
+3. Display the names and salaries of all employees except JAMES. 
+4. Find out the details of employees whose names begin with ‘S’. 
+5. Find out the names of all employees that have ‘A’ anywhere in their name. 
+6. Find out the names of all employees that have ‘L’ as their third character in 
+their name. 
+7. Compute daily salary of JONES. 
+8. Calculate the total monthly salary of all employees. 
+9. Print the average annual salary . 
+10. Select the name, job, salary, department number of all employees except 
+SALESMAN from department number 30. 
+
+
+
