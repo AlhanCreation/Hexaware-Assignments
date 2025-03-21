@@ -186,12 +186,18 @@ BEGIN
 END;
 
 EXEC UpdateCustomerContact @customerID = 1001, 
-                           @email = 'newemail@example.com', 
+                           @email = ' newemail@example.com', 
                            @customerAddress = '123 New Street, City, Country';
 
 /* 8. Write an SQL query to recalculate and update the total cost of each order in the "Orders" 
 table based on the prices and quantities in the "OrderDetails" table. */
-
+UPDATE Orders 
+SET TotalAmount = (
+    SELECT SUM(p.Price * od.Quantity) 
+    FROM OrderDetails od
+    JOIN Products p ON od.ProductID = p.ProductID
+    WHERE od.OrderID = Orders.OrderID
+);
 /* 9. Write an SQL query to delete all orders and their associated order details for a specific 
 customer from the "Orders" and "OrderDetails" tables. Allow users to input the customer ID 
 as a parameter. */
@@ -268,11 +274,21 @@ Order by sum(O.Quantity) Desc
 
 /*5. Write an SQL query to retrieve a list of electronic gadgets along with their corresponding 
 categories. */
+
+select * from orders
+select * from customers
+select * from orderdetails
+select * from Products
   
 
 /*6. Write an SQL query to calculate the average order value for each customer. Include the 
 customer's name and their average order value. */
 
+select O.CustomerID, C.FirstName,C.LastName,Avg(O.TotalAmount) as Avg_order_value 
+from Customers C 
+join Orders O 
+ON C.CustomerID = O.CustomerID 
+Group by C.FirstName,C.LastName , O.CustomerID
 
 /*7. Write an SQL query to find the order with the highest total revenue. Include the order ID, 
 customer information, and the total revenue.*/
@@ -290,8 +306,4 @@ Allow users to input the product name as a parameter.*/
 specific time period. Allow users to input the start and end dates as parameters. */
 	
 
-select * from orders
-select * from customers
-select * from orderdetails
-select * from Products
 
