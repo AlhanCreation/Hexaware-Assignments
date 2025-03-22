@@ -168,10 +168,6 @@ select * from OrderDetails
 
 /* 7 Write an SQL query to update the contact information (e.g., email and address) of a specific
    customer in the "Customers" table. Allow users to input the customer ID and new contact information. */
-
-   update  customers set email = @emaild , set CustomerAddress = @customerAddress where customerID =@customerID  
-   select * from customers 
-   --OR
    CREATE PROCEDURE UpdateCustomerContact
     @customerID numeric (4,0),
     @email varchar(25),
@@ -196,12 +192,11 @@ SET TotalAmount = (
     JOIN Products p ON od.ProductID = p.ProductID
     WHERE od.OrderID = Orders.OrderID
 );
-d table orders
 
-delete  orders
 /* 9. Write an SQL query to delete all orders and their associated order details for a specific 
 customer from the "Orders" and "OrderDetails" tables. Allow users to input the customer ID 
 as a parameter. */
+
 Declare @customerID numeric (10,0)
 	SET @customerID = 1007; 
 	delete from OrderDetails where OrderID = (select OrderID from Orders where customerid = @customerid);
@@ -220,8 +215,14 @@ update Orders set status = 'Shipped' where OrderID=30001
 /* 12. Write an SQL query to calculate and update the number of orders placed by each customer 
 in the "Customers" table based on the data in the "Orders" table. */	
 
---Not solved
+ALTER TABLE Customers ADD TotalOrders int 
 
+UPDATE Customers
+SET TotalOrders = (
+    SELECT COUNT(O.OrderID) 
+    FROM Orders O 
+    WHERE O.CustomerID = Customers.CustomerID
+);
 
 -- Task 3
 /* 1. Write an SQL query to retrieve a list of all orders along with customer information (e.g., 
@@ -389,7 +390,6 @@ select * from customers
 select * from orderdetails
 select * from Products
 
-
 /*6. Write an SQL query to find the customers who have placed the most orders. List their names 
 and the number of orders they've placed. */
 WITH OrderCounts AS (
@@ -411,12 +411,49 @@ JOIN Orders O ON C.CustomerID = O.CustomerID
 GROUP BY C.CustomerID, C.FirstName, C.LastName
 ORDER BY TotalOrders DESC;
 
-
-
 /*8. Write an SQL query to find the customer who has spent the most money (highest total revenue) 
 on electronic gadgets. List their name and total spending. */
+SELECT TOP 1 C.FirstName, C.LastName, 
+    (SELECT SUM(OD.Quantity * P.Price) 
+     FROM OrderDetails OD 
+     JOIN Products P ON OD.ProductID = P.ProductID 
+     WHERE OD.OrderID IN (SELECT O.OrderID FROM Orders O WHERE O.CustomerID = C.CustomerID) 
+     AND P.ProductCategories = 'Electronic Gadgets') AS TotalSpending
+FROM Customers C
+ORDER BY TotalSpending DESC;
+
+--OR
+
+SELECT TOP 1 C.FirstName, C.LastName, SUM(OD.Quantity * P.Price) AS TotalSpending
+FROM Customers C
+JOIN Orders O ON C.CustomerID = O.CustomerID
+JOIN OrderDetails OD ON O.OrderID = OD.OrderID
+JOIN Products P ON OD.ProductID = P.ProductID
+WHERE P.ProductCategories = 'Electronic Gadgets'
+GROUP BY C.CustomerID, C.FirstName, C.LastName
+ORDER BY TotalSpending DESC;
+
 
 /*9. Write an SQL query to calculate the average order value (total revenue divided by the number of 
 orders) for all customers. */
 
+SELECT 
+    (SELECT SUM(OD.Quantity * P.Price) 
+     FROM OrderDetails OD
+     JOIN Products P ON OD.ProductID = P.ProductID) 
+    /
+    (SELECT COUNT(DISTINCT OrderID) FROM OrderDetails) 
+    AS AverageOrderValue;
 
+/*10. Write an SQL query to find the total number of orders placed by each customer and list their 
+names along with the order count. */
+
+SELECT C.FirstName, C.LastName, COUNT(O.OrderID) AS TotalOrders
+FROM Customers C
+LEFT JOIN Orders O ON C.CustomerID = O.CustomerID
+GROUP BY C.CustomerID, C.FirstName, C.LastName
+ORDER BY TotalOrders DESC;
+--or
+SELECT CustomerID, FirstName, LastName, TotalOrders  
+FROM Customers  
+ORDER BY TotalOrders DESC;  
