@@ -26,6 +26,9 @@ use TechShop;
 	Price decimal(10,2)
 	);
 
+	ALTER TABLE Orders
+ALTER COLUMN TotalAmount numeric(10,2);
+	
 	create table Orders (
 	OrderID numeric(10,0) primary key,
 	CustomerID numeric (4,0),
@@ -128,6 +131,8 @@ use TechShop;
 
 select * from Orders
 select * from OrderDetails
+
+
 
 --Tasks 2: Select, Where, Between, AND, LIKE:
 

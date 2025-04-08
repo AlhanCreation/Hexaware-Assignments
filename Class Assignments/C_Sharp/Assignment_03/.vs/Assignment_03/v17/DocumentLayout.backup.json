@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ALHAN SIDDIQUE\\Desktop\\Hexaware Technical Training\\Hexaware-Assignments\\Class Assignments\\C_Sharp\\Assignment_03\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F8BB7BD2-4578-4BDD-BE1D-81DC8D9DAB44}|Inheritance\\Inheritance.csproj|c:\\users\\alhan siddique\\desktop\\hexaware technical training\\hexaware-assignments\\class assignments\\c_sharp\\assignment_03\\inheritance\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8BB7BD2-4578-4BDD-BE1D-81DC8D9DAB44}|Inheritance\\Inheritance.csproj|solutionrelative:inheritance\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ALHAN SIDDIQUE\\Desktop\\Hexaware Technical Training\\Hexaware-Assignments\\Class Assignments\\C_Sharp\\Assignment_03\\Inheritance\\Program.cs",
+              "RelativeDocumentMoniker": "Inheritance\\Program.cs",
+              "ToolTip": "C:\\Users\\ALHAN SIDDIQUE\\Desktop\\Hexaware Technical Training\\Hexaware-Assignments\\Class Assignments\\C_Sharp\\Assignment_03\\Inheritance\\Program.cs",
+              "RelativeToolTip": "Inheritance\\Program.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAqwFIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T03:27:58.521Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
