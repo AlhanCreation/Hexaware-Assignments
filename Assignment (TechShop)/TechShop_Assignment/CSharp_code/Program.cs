@@ -69,20 +69,20 @@ namespace TechShop
             //orderDetailService.GetOrderDetailsById(4001);
 
             //orderDetailService.UpdateQuantity(4001, 5);
-          //orderDetailService.CalculateSubtotal(4003);
+            //orderDetailService.CalculateSubtotal(4003);
             //orderDetailService.AddDiscount(4002, 19);
 
 
-            //inventoryService.GetProduct(2);
-            //inventoryService.GetQuantityInStock(3);
-            //inventoryService.AddToInventory(3, 20);
-            //inventoryService.RemoveFromInventory(3, 20);
-            //inventoryService.UpdateStockQuantity(8, 10);
-            //inventoryService.IsProductAvailable(4, 2);
-            //inventoryService.GetInventoryValue(5);
+            //inventoryService.GetProduct(2001);
+            //inventoryService.GetQuantityInStock(2001);
+            //inventoryService.AddToInventory(2003, 2);
+            //inventoryService.RemoveFromInventory(2004, 20);
+            //inventoryService.UpdateStockQuantity(2005, 10);
+            //inventoryService.IsProductAvailable(2004, 2);
+            //inventoryService.GetInventoryValue(2005);
             //inventoryService.ListLowStockProducts(55);
             //inventoryService.ListOutOfStockProducts();
-            //inventoryService.ListAllProducts();
+            inventoryService.ListAllProducts();
         }
 
 

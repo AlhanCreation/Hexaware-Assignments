@@ -1,38 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ALHAN SIDDIQUE\\Desktop\\Hexaware Technical Training\\Hexaware-Assignments\\Assignment (TechShop)\\TechShop_Assignment\\",
+  "WorkspaceRootPath": "C:\\Users\\ALHAN SIDDIQUE\\Desktop\\Hexaware Technical Training\\Hexaware-Assignments\\Assignment (TechShop)\\TechShop_Assignment\\CSharp_code\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F1C677C4-7EF5-494E-BABE-44A3E775851B}|TechShop.csproj|c:\\users\\alhan siddique\\desktop\\hexaware technical training\\hexaware-assignments\\assignment (techshop)\\techshop_assignment\\repository\\orderdetailsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1C677C4-7EF5-494E-BABE-44A3E775851B}|TechShop.csproj|solutionrelative:repository\\orderdetailsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1C677C4-7EF5-494E-BABE-44A3E775851B}|TechShop.csproj|c:\\users\\alhan siddique\\desktop\\hexaware technical training\\hexaware-assignments\\assignment (techshop)\\techshop_assignment\\service\\orderdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1C677C4-7EF5-494E-BABE-44A3E775851B}|TechShop.csproj|solutionrelative:service\\orderdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1C677C4-7EF5-494E-BABE-44A3E775851B}|TechShop.csproj|c:\\users\\alhan siddique\\desktop\\hexaware technical training\\hexaware-assignments\\assignment (techshop)\\techshop_assignment\\repository\\iorderdetailsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1C677C4-7EF5-494E-BABE-44A3E775851B}|TechShop.csproj|solutionrelative:repository\\iorderdetailsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1C677C4-7EF5-494E-BABE-44A3E775851B}|TechShop.csproj|c:\\users\\alhan siddique\\desktop\\hexaware technical training\\hexaware-assignments\\assignment (techshop)\\techshop_assignment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F1C677C4-7EF5-494E-BABE-44A3E775851B}|TechShop.csproj|c:\\users\\alhan siddique\\desktop\\hexaware technical training\\hexaware-assignments\\assignment (techshop)\\techshop_assignment\\csharp_code\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F1C677C4-7EF5-494E-BABE-44A3E775851B}|TechShop.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1C677C4-7EF5-494E-BABE-44A3E775851B}|TechShop.csproj|c:\\users\\alhan siddique\\desktop\\hexaware technical training\\hexaware-assignments\\assignment (techshop)\\techshop_assignment\\repository\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1C677C4-7EF5-494E-BABE-44A3E775851B}|TechShop.csproj|solutionrelative:repository\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F1C677C4-7EF5-494E-BABE-44A3E775851B}|TechShop.csproj|c:\\users\\alhan siddique\\desktop\\hexaware technical training\\hexaware-assignments\\assignment (techshop)\\techshop_assignment\\csharp_code\\service\\inventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1C677C4-7EF5-494E-BABE-44A3E775851B}|TechShop.csproj|solutionrelative:service\\inventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1C677C4-7EF5-494E-BABE-44A3E775851B}|TechShop.csproj|c:\\users\\alhan siddique\\desktop\\hexaware technical training\\hexaware-assignments\\assignment (techshop)\\techshop_assignment\\service\\iorderdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1C677C4-7EF5-494E-BABE-44A3E775851B}|TechShop.csproj|solutionrelative:service\\iorderdetailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F1C677C4-7EF5-494E-BABE-44A3E775851B}|TechShop.csproj|c:\\users\\alhan siddique\\desktop\\hexaware technical training\\hexaware-assignments\\assignment (techshop)\\techshop_assignment\\csharp_code\\exceptions\\insufficientstockexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1C677C4-7EF5-494E-BABE-44A3E775851B}|TechShop.csproj|solutionrelative:exceptions\\insufficientstockexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1C677C4-7EF5-494E-BABE-44A3E775851B}|TechShop.csproj|c:\\users\\alhan siddique\\desktop\\hexaware technical training\\hexaware-assignments\\assignment (techshop)\\techshop_assignment\\model\\orderdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1C677C4-7EF5-494E-BABE-44A3E775851B}|TechShop.csproj|solutionrelative:model\\orderdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1C677C4-7EF5-494E-BABE-44A3E775851B}|TechShop.csproj|c:\\users\\alhan siddique\\desktop\\hexaware technical training\\hexaware-assignments\\assignment (techshop)\\techshop_assignment\\repository\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1C677C4-7EF5-494E-BABE-44A3E775851B}|TechShop.csproj|solutionrelative:repository\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F1C677C4-7EF5-494E-BABE-44A3E775851B}|TechShop.csproj|c:\\users\\alhan siddique\\desktop\\hexaware technical training\\hexaware-assignments\\assignment (techshop)\\techshop_assignment\\csharp_code\\repository\\inventoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1C677C4-7EF5-494E-BABE-44A3E775851B}|TechShop.csproj|solutionrelative:repository\\inventoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,110 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "OrderRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ALHAN SIDDIQUE\\Desktop\\Hexaware Technical Training\\Hexaware-Assignments\\Assignment (TechShop)\\TechShop_Assignment\\Repository\\OrderRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\OrderRepository.cs",
-              "ToolTip": "C:\\Users\\ALHAN SIDDIQUE\\Desktop\\Hexaware Technical Training\\Hexaware-Assignments\\Assignment (TechShop)\\TechShop_Assignment\\Repository\\OrderRepository.cs",
-              "RelativeToolTip": "Repository\\OrderRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T16:18:32.593Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "OrderDetails.cs",
-              "DocumentMoniker": "C:\\Users\\ALHAN SIDDIQUE\\Desktop\\Hexaware Technical Training\\Hexaware-Assignments\\Assignment (TechShop)\\TechShop_Assignment\\Model\\OrderDetails.cs",
-              "RelativeDocumentMoniker": "Model\\OrderDetails.cs",
-              "ToolTip": "C:\\Users\\ALHAN SIDDIQUE\\Desktop\\Hexaware Technical Training\\Hexaware-Assignments\\Assignment (TechShop)\\TechShop_Assignment\\Model\\OrderDetails.cs",
-              "RelativeToolTip": "Model\\OrderDetails.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAowA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T16:12:58.162Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IOrderDetailService.cs",
-              "DocumentMoniker": "C:\\Users\\ALHAN SIDDIQUE\\Desktop\\Hexaware Technical Training\\Hexaware-Assignments\\Assignment (TechShop)\\TechShop_Assignment\\Service\\IOrderDetailService.cs",
-              "RelativeDocumentMoniker": "Service\\IOrderDetailService.cs",
-              "ToolTip": "C:\\Users\\ALHAN SIDDIQUE\\Desktop\\Hexaware Technical Training\\Hexaware-Assignments\\Assignment (TechShop)\\TechShop_Assignment\\Service\\IOrderDetailService.cs",
-              "RelativeToolTip": "Service\\IOrderDetailService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T15:59:00.312Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ALHAN SIDDIQUE\\Desktop\\Hexaware Technical Training\\Hexaware-Assignments\\Assignment (TechShop)\\TechShop_Assignment\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\ALHAN SIDDIQUE\\Desktop\\Hexaware Technical Training\\Hexaware-Assignments\\Assignment (TechShop)\\TechShop_Assignment\\Program.cs*",
-              "RelativeToolTip": "Program.cs*",
-              "ViewState": "AgIAADsAAAAAAAAAAAAYwEgAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T15:10:10.532Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IOrderDetailsRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ALHAN SIDDIQUE\\Desktop\\Hexaware Technical Training\\Hexaware-Assignments\\Assignment (TechShop)\\TechShop_Assignment\\Repository\\IOrderDetailsRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\IOrderDetailsRepository.cs",
-              "ToolTip": "C:\\Users\\ALHAN SIDDIQUE\\Desktop\\Hexaware Technical Training\\Hexaware-Assignments\\Assignment (TechShop)\\TechShop_Assignment\\Repository\\IOrderDetailsRepository.cs",
-              "RelativeToolTip": "Repository\\IOrderDetailsRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
+              "Title": "InsufficientStockException.cs",
+              "DocumentMoniker": "C:\\Users\\ALHAN SIDDIQUE\\Desktop\\Hexaware Technical Training\\Hexaware-Assignments\\Assignment (TechShop)\\TechShop_Assignment\\CSharp_code\\Exceptions\\InsufficientStockException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\InsufficientStockException.cs",
+              "ToolTip": "C:\\Users\\ALHAN SIDDIQUE\\Desktop\\Hexaware Technical Training\\Hexaware-Assignments\\Assignment (TechShop)\\TechShop_Assignment\\CSharp_code\\Exceptions\\InsufficientStockException.cs",
+              "RelativeToolTip": "Exceptions\\InsufficientStockException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T15:59:40.386Z",
+              "WhenOpened": "2025-04-08T18:10:04.331Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "OrderDetailService.cs",
-              "DocumentMoniker": "C:\\Users\\ALHAN SIDDIQUE\\Desktop\\Hexaware Technical Training\\Hexaware-Assignments\\Assignment (TechShop)\\TechShop_Assignment\\Service\\OrderDetailService.cs",
-              "RelativeDocumentMoniker": "Service\\OrderDetailService.cs",
-              "ToolTip": "C:\\Users\\ALHAN SIDDIQUE\\Desktop\\Hexaware Technical Training\\Hexaware-Assignments\\Assignment (TechShop)\\TechShop_Assignment\\Service\\OrderDetailService.cs",
-              "RelativeToolTip": "Service\\OrderDetailService.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAkwBQAAAAJAAAAAAAAAA==",
+              "Title": "InventoryService.cs",
+              "DocumentMoniker": "C:\\Users\\ALHAN SIDDIQUE\\Desktop\\Hexaware Technical Training\\Hexaware-Assignments\\Assignment (TechShop)\\TechShop_Assignment\\CSharp_code\\Service\\InventoryService.cs",
+              "RelativeDocumentMoniker": "Service\\InventoryService.cs",
+              "ToolTip": "C:\\Users\\ALHAN SIDDIQUE\\Desktop\\Hexaware Technical Training\\Hexaware-Assignments\\Assignment (TechShop)\\TechShop_Assignment\\CSharp_code\\Service\\InventoryService.cs",
+              "RelativeToolTip": "Service\\InventoryService.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAowIMAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T15:31:28.181Z",
+              "WhenOpened": "2025-04-08T18:05:07.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InventoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ALHAN SIDDIQUE\\Desktop\\Hexaware Technical Training\\Hexaware-Assignments\\Assignment (TechShop)\\TechShop_Assignment\\CSharp_code\\Repository\\InventoryRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\InventoryRepository.cs",
+              "ToolTip": "C:\\Users\\ALHAN SIDDIQUE\\Desktop\\Hexaware Technical Training\\Hexaware-Assignments\\Assignment (TechShop)\\TechShop_Assignment\\CSharp_code\\Repository\\InventoryRepository.cs",
+              "RelativeToolTip": "Repository\\InventoryRepository.cs",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAuwJYAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T17:37:19.083Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "OrderDetailsRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ALHAN SIDDIQUE\\Desktop\\Hexaware Technical Training\\Hexaware-Assignments\\Assignment (TechShop)\\TechShop_Assignment\\Repository\\OrderDetailsRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\OrderDetailsRepository.cs",
-              "ToolTip": "C:\\Users\\ALHAN SIDDIQUE\\Desktop\\Hexaware Technical Training\\Hexaware-Assignments\\Assignment (TechShop)\\TechShop_Assignment\\Repository\\OrderDetailsRepository.cs*",
-              "RelativeToolTip": "Repository\\OrderDetailsRepository.cs*",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBkAAABgAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ALHAN SIDDIQUE\\Desktop\\Hexaware Technical Training\\Hexaware-Assignments\\Assignment (TechShop)\\TechShop_Assignment\\CSharp_code\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\ALHAN SIDDIQUE\\Desktop\\Hexaware Technical Training\\Hexaware-Assignments\\Assignment (TechShop)\\TechShop_Assignment\\CSharp_code\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAQwFMAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T15:34:06.227Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IOrderRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ALHAN SIDDIQUE\\Desktop\\Hexaware Technical Training\\Hexaware-Assignments\\Assignment (TechShop)\\TechShop_Assignment\\Repository\\IOrderRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\IOrderRepository.cs",
-              "ToolTip": "C:\\Users\\ALHAN SIDDIQUE\\Desktop\\Hexaware Technical Training\\Hexaware-Assignments\\Assignment (TechShop)\\TechShop_Assignment\\Repository\\IOrderRepository.cs",
-              "RelativeToolTip": "Repository\\IOrderRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T15:58:43.406Z",
+              "WhenOpened": "2025-04-08T15:10:10.532Z",
               "EditorCaption": ""
             }
           ]

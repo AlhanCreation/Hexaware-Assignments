@@ -67,7 +67,7 @@ namespace TechShop.Repository
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
-                cmd.CommandText = "select Products.ProductID, Products.ProductName, Products.description, products.price from products join inventory on products.productid=inventory.productid where inventory.productid=@id";
+                cmd.CommandText = "select Products.ProductID, Products.ProductName, Products.ProductDescription, products.price from products join inventory on products.productid=inventory.productid where inventory.productid=@id";
                 cmd.Parameters.AddWithValue("@id", id);
                 cmd.Connection = connection;
                 SqlDataReader reader = cmd.ExecuteReader();
@@ -76,7 +76,7 @@ namespace TechShop.Repository
                     Product product = new Product();
                     product.ProductID = (int)reader["ProductID"];
                     product.ProductName = (string)reader["ProductName"];
-                    product.Description = (string)reader["Description"];
+                    product.Description = (string)reader["ProductDescription"];
                     product.Price = (decimal)reader["Price"];
                     return product;
                 }
@@ -146,13 +146,17 @@ namespace TechShop.Repository
 
         }
 
+
+
+
+
         public List<string> ListLowStockProducts(int threshold)
         {
             List<string> result = new List<string>();
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
-                cmd.CommandText = "select products.ProductName from inventory join products on products.productid=inventory.productid where inventory.quantityinstock<@threshold";
+                cmd.CommandText = "select products.ProductName from inventory join products on products.productid=inventory.productid where inventory.quantityinstock>@threshold";
                 cmd.Parameters.AddWithValue("@threshold", threshold);
                 cmd.Connection = connection;
                 SqlDataReader reader = cmd.ExecuteReader();

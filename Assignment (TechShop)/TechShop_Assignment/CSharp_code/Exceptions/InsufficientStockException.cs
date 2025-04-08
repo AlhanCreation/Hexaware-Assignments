@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TechShop.Exceptions
 {
-    internal class InsufficientStockException : Exception
+    public class InsufficientStockException : Exception
     {
         public InsufficientStockException() { }
         public InsufficientStockException(string message) : base(message) { }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "py8phKQN2V8=",
+  "dgSpecHash": "tE3SH5TLi5o=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ALHAN SIDDIQUE\\Desktop\\Hexaware Technical Training\\Hexaware-Assignments\\Assignment (TechShop)\\TechShop_Assignment\\TechShop.csproj",
+  "projectFilePath": "C:\\Users\\ALHAN SIDDIQUE\\Desktop\\Hexaware Technical Training\\Hexaware-Assignments\\Assignment (TechShop)\\TechShop_Assignment\\CSharp_code\\TechShop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ALHAN SIDDIQUE\\.nuget\\packages\\dotnetenv\\3.1.1\\dotnetenv.3.1.1.nupkg.sha512",
     "C:\\Users\\ALHAN SIDDIQUE\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",

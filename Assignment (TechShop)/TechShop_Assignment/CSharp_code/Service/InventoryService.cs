@@ -128,7 +128,7 @@ namespace TechShop.Service
                 }
             }
             else
-            {
+            {  
                 throw new InsufficientStockException("No products available");
             }
         }
