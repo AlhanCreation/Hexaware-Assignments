@@ -13,7 +13,7 @@ namespace cars.util
         {
             string connectionString = DBPropertyUtil.GetDBProperty("connectionString");
             
-            SqlConnection conn = new SqlConnection(connectionString);
+            SqlConnection conn = new SqlConnection("Data Source=HP\\SQLEXPRESS;Initial Catalog=carss;Integrated Security=True");
             try
             {
                 conn.Open();
