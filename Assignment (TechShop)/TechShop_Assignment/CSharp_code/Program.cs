@@ -73,7 +73,7 @@ namespace TechShop
             //orderDetailService.AddDiscount(4002, 19);
 
 
-            //inventoryService.GetProduct(2001);
+            inventoryService.GetProduct(2001);
             //inventoryService.GetQuantityInStock(2001);
             //inventoryService.AddToInventory(2003, 2);
             //inventoryService.RemoveFromInventory(2004, 20);
@@ -82,7 +82,7 @@ namespace TechShop
             //inventoryService.GetInventoryValue(2005);
             //inventoryService.ListLowStockProducts(55);
             //inventoryService.ListOutOfStockProducts();
-            inventoryService.ListAllProducts();
+            //inventoryService.ListAllProducts();
         }
 
 
