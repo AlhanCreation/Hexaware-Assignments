@@ -7,6 +7,7 @@ using cars.entity;
 using cars.util;
 using System.Data.SqlClient;
 using System.Runtime.InteropServices.Marshalling;
+using cars.exception;
 
 namespace cars.dao
 {
@@ -66,43 +67,40 @@ namespace cars.dao
 
     }
          
-         bool ICrimeAnalysisService.UpdateIncidentStatus(string status, int incidentId)
+        // Add this at the top
+
+      bool ICrimeAnalysisService.UpdateIncidentStatus(string status, int incidentId)
+    {
+        try
         {
-            try
+            string query = "UPDATE Incidents SET Status = @status WHERE IncidentID = @incidentId";
+            SqlConnection conn = DBConnUtil.GetSqlConnection();
+
+            using (SqlCommand cmd = new SqlCommand(query, conn))
             {
-            
-                string query = "UPDATE Incidents SET Status = @status WHERE IncidentID = @incidentId";
+                cmd.Parameters.AddWithValue("@status", status);
+                cmd.Parameters.AddWithValue("@incidentId", incidentId);
 
-                SqlConnection conn = DBConnUtil.GetSqlConnection();
+                int result = cmd.ExecuteNonQuery();
 
-                using (SqlCommand cmd = new SqlCommand(query, conn))
+                if (result > 0)
                 {
-                    cmd.Parameters.AddWithValue("@status", status);
-                    cmd.Parameters.AddWithValue("@incidentId", incidentId);
-                  
-                    int result = cmd.ExecuteNonQuery();
-
-                    if (result > 0)
-                    {
-                        Console.WriteLine("Incident updated to status: *{0}* for IncidentId: *{1}*",status, incidentId);
-                        return true;
-                    }
-                    else
-                    {
-                        Console.WriteLine("Failed to insert the incident.");
-                        return false;
-                    }
+                    Console.WriteLine("Incident updated to status: *{0}* for IncidentId: *{1}*", status, incidentId);
+                    return true;
+                }
+                else
+                {
+                        throw new IncidentNumberNotFoundException($"Incident with ID {incidentId} not found.");
                 }
             }
-            catch (Exception ex)
-            {
-                // Include full exception information
-                throw new Exception("Error occurred during CreateIncident: " + ex.Message);
-            }
-
         }
+        catch (Exception ex)
+        {
+            throw new Exception("Error occurred during UpdateIncidentStatus: " + ex.Message);
+        }
+    }
 
-         List<Incidents> ICrimeAnalysisService.GetIncidentsInDateRange(DateTime startDate, DateTime endDate)
+    List<Incidents> ICrimeAnalysisService.GetIncidentsInDateRange(DateTime startDate, DateTime endDate)
         {
             List<Incidents> incident = new List<Incidents>();
 

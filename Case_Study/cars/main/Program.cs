@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using cars.entity;
 using cars.dao;
 
-namespace cars
+namespace cars.main
 {
     internal class Program
     {
@@ -89,7 +89,7 @@ namespace cars
             Incidents incident = new Incidents(incidentType, DateTime.Now, location, description, status, victimId, suspectId);
             bool success = service.CreateIncident(incident);
 
-            Console.WriteLine(success ? "Incident created successfully!" : "Failed to create incident.");
+            
         }
 
         static void UpdateIncidentStatus(ICrimeAnalysisService service)
@@ -104,7 +104,7 @@ namespace cars
 
             bool success = service.UpdateIncidentStatus(status, incidentId);
 
-            Console.WriteLine(success ? "Incident status updated successfully!" : "Failed to update incident status.");
+            
         }
 
         static void GetIncidentsInDateRange(ICrimeAnalysisService service)
