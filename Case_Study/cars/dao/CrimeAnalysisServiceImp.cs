@@ -40,7 +40,7 @@ namespace cars.dao
                     cmd.Parameters.AddWithValue("@VictimID", incidents.VictimId);
                     cmd.Parameters.AddWithValue("@SuspectID", incidents.SuspectId);
 
-                    // Open the connection
+                  
                 
 
                     // Execute the SQL command
@@ -67,7 +67,7 @@ namespace cars.dao
 
     }
          
-        // Add this at the top
+     
 
       bool ICrimeAnalysisService.UpdateIncidentStatus(string status, int incidentId)
     {
@@ -212,4 +212,6 @@ namespace cars.dao
             
         }
     }
+
+
 }
