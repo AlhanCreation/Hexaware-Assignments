@@ -80,9 +80,44 @@ namespace cars.main
             Console.Write("Enter Status (Open/Closed): ");
             string status = Console.ReadLine();
 
+            Console.WriteLine(new string('-', 50));
+            Console.WriteLine("Victims List: ");
+            Console.WriteLine(new string('-', 50));
+
+            CrimeAnalysisServiceImp serviceImp = new CrimeAnalysisServiceImp();
+            List<Victims> victimsList = serviceImp.ListVictims();
+
+            if (victimsList.Count == 0)
+            {
+                Console.WriteLine("No victims found in the database.");
+            }
+            else
+            {
+                foreach (var victim in victimsList)
+                {
+                    Console.WriteLine(victim.ToString());
+                }
+            }
+
+
             Console.Write("Enter Victim ID: ");
             int victimId = int.Parse(Console.ReadLine());
 
+            Console.WriteLine(new string('-', 50));
+            Console.WriteLine("Suspects List: ");
+            Console.WriteLine(new string('-', 50));
+            List<Suspects> suspectsList = serviceImp.ListSuspects();
+            if (suspectsList.Count == 0)
+            {
+                Console.WriteLine("No suspects found in the database.");
+            }
+            else
+            {
+                foreach (var suspect in suspectsList)
+                {
+                    Console.WriteLine(suspect.ToString());
+                }
+            }
             Console.Write("Enter Suspect ID: ");
             int suspectId = int.Parse(Console.ReadLine());
 

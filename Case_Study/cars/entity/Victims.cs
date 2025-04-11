@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace cars.entity
 {
-    internal class Victims
+    public class Victims
     {
          public int VictimID  {get; set;} 
          public string FirstName {get; set;}
@@ -17,6 +17,8 @@ namespace cars.entity
          public string Address { get; set;}
          public string   PhoneNumber { get; set;}
 
+
+        public Victims() { }
         public Victims(int victimId , string firstName , string lastName , DateTime dateOfBirth, string gender , string address, string phoneNumber) { 
 
             VictimID = victimId;

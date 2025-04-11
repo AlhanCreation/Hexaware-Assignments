@@ -66,10 +66,76 @@ namespace cars.dao
             }
 
     }
-         
-     
 
-      bool ICrimeAnalysisService.UpdateIncidentStatus(string status, int incidentId)
+
+        public List<Victims> ListVictims()
+        {
+            try
+            {
+                List<Victims> victimsList = new List<Victims>();
+                string query = "SELECT * FROM Victims";
+                SqlConnection conn = DBConnUtil.GetSqlConnection();
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        victimsList.Add(new Victims
+                        {
+                            VictimID = (int)reader["VictimID"],
+                            FirstName = (string)reader["FirstName"],
+                            LastName = (string)reader["LastName"],
+                            Gender = (string)reader["Gender"],
+                            PhoneNumber = (string)reader["PhoneNumber"],
+                            Address = (string)reader["Address"],
+                            DateOfBirth = (DateTime)reader["DateOfBirth"],
+                        });
+                    }
+                }
+                return victimsList;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error occurred during ListVictims: " + ex.Message);
+            }
+        }
+
+        public List<Suspects> ListSuspects()
+        {
+            try
+            {
+                List<Suspects> suspectsList = new List<Suspects>();
+                string query = "SELECT * FROM Suspects";
+                SqlConnection conn = DBConnUtil.GetSqlConnection();
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        suspectsList.Add(new Suspects
+                        {
+                            SuspectID = (int)reader["SuspectID"],
+                            FirstName = (string)reader["FirstName"],
+                            LastName = (string)reader["LastName"],
+                            Gender = (string)reader["Gender"],
+                            PhoneNumber = (string)reader["PhoneNumber"],
+                            Address = (string)reader["Address"],
+                            DateOfBirth = (DateTime)reader["DateOfBirth"],
+                        });
+                    }
+                }
+                return suspectsList;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error occurred during ListSuspect: " + ex.Message);
+            }
+        }
+
+
+
+
+        bool ICrimeAnalysisService.UpdateIncidentStatus(string status, int incidentId)
     {
         try
         {

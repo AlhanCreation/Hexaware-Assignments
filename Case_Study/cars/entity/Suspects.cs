@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace cars.entity
 {
-    internal class Suspects
+   
+    public class Suspects
     {
         public int SuspectID { get; set; }
         public string  FirstName {get;set;}
@@ -17,6 +18,7 @@ namespace cars.entity
         public string Address { get; set; }
         public string PhoneNumber { get; set; }
 
+        public Suspects() { }
         public Suspects(int suspectId, string firstName, string lastName, DateTime dateOfBirth, string gender, string address, string phoneNumber)
         {
 
@@ -29,6 +31,11 @@ namespace cars.entity
             PhoneNumber = phoneNumber;
 
         }
+        public override string ToString()
+        {
+            return $"SuspectID: {SuspectID} \n, Name: {FirstName} {LastName}\n, DateOfBirth: {DateOfBirth:yyyy-MM-dd}\n, Gender: {Gender}\n, Address: {Address}\n, PhoneNumber: {PhoneNumber}\n"+new string('_',50);
+        }
+
        
     }
 }
